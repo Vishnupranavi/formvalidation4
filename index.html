@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Signup page</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <form id="create-account-form" action="value.html" method="POST" onsubmit="validateForm()">
+       <div class="title">
+         <h2>Sign-up</h2>
+       </div>
+        <!-- username -->
+        <div class="input-group">
+           <label for="username">FirstName</label>
+           <input type="text" name="username" value="" id="username" placeholder="Name">
+           <i class="fas fa-check-circle"></i>
+           <i class="fas fa-exclamation-circle"></i>
+           <p>Error Message</p>
+        </div>
+        <!-- lastname -->
+        <div class="input-group">
+         <label for="lastname">LastName</label>
+         <input type="text" name="lastname" value="" id="lastname" placeholder="LastName">
+         <i class="fas fa-check-circle"></i>
+         <i class="fas fa-exclamation-circle"></i>
+         <p>Error Message</p>
+      </div>
+        <!-- email -->
+        <div class="input-group">
+           <label for="email">Email</label>
+           <input type="email" name="email" value="" id="email" placeholder="email">
+           <i class="fas fa-check-circle"></i>
+           <i class="fas fa-exclamation-circle"></i>
+           <p>Error Message</p>
+        </div>
+        <!-- mobilenumber -->
+        <div class="input-group">
+         <label for="mobile">Mobile</label>
+         <input type="mobile" name="mobile" value="" id="mobile" placeholder="mobile">
+         <i class="fas fa-check-circle"></i>
+         <i class="fas fa-exclamation-circle"></i>
+         <p>Error Message</p>
+      </div>
+      <!-- Qualification -->
+        
+         <div class="input-group">
+         <!-- <input type="qualification"required> -->
+         <label for="qualification" name="qualification" value="" id="qualification">Qualification</label>
+         <select>
+         <option selected disabled value="">Choose</option>
+         <option value="HSC" id="">HSC</option>
+         <option value="UG">UG</option>
+         <option value="PG">PG</option>
+         <br>
+         <br>
+      </select>
+      </div>
+      <!-- Gender -->
+     <div class="input-group">
+            <label> 
+            Gender
+            </label><br>
+            <input type="radio" value="Male" name="gender" required> Male 
+            <input type="radio" value="Female" name="gender"> Female 
+            <input type="radio" value="Other" name="gender"> Other
+         </div>
+        <!-- password -->
+        <div class="input-group">
+           <label for="password">Password</label>
+           <input type="password" name="password" value="" id="password" placeholder="Password">
+           <i class="fas fa-check-circle"></i>
+           <i class="fas fa-exclamation-circle"></i>
+           <p>Error Message</p>
+        </div>
+        <!-- confirm password -->
+        <div class="input-group">
+           <label for="confirm-password">Confirm Password</label>
+           <input type="password" name="confirm-password" value="" id="confirm-password" placeholder="Confirm Password">
+           <i class="fas fa-check-circle"></i>
+           <i class="fas fa-exclamation-circle"></i>
+           <p>Error Message</p>
+        </div>
+        <!-- checkbox -->
+        
+      <input type="checkbox" id="check" name="check" value="check" required>
+      <label for="check"> I had filled all fields</label><br>
+      <p id="text" style="display:none">Click the checkbox</p>
+      <button type="submit" name="button" class="btn" onclick="validateForm()">Register</button>
+      
+    </form>
+
+    <script type="text/javascript" src="validation.js">
+
+    </script>
+  </body>
+</html>
